@@ -6,4 +6,4 @@
  * admin@admvk.ru.
  */
 
-echo 'test1';
+echo 'test2';
