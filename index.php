@@ -6,4 +6,7 @@
  * admin@admvk.ru.
  */
 
-echo 'test2';
+require_once 'includes/header.php';
+require_once 'includes/menu.php';
+require_once 'includes/content.php';
+require_once 'includes/footer.php';

@@ -18,4 +18,9 @@ $db_name = '';
 
 $link = mysql_connect('localhost', $db_user, $db_passwd);
 
-mysql_select_db($db_name, $link);
+if (!mysql_select_db($db_name)) {
+    die("Не могу подключиться к базе данных!");
+  }
+
+  mysql_select_db($db_name, $link);
+  mysql_query('SET NAMES utf8');
