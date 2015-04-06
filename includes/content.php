@@ -8,6 +8,12 @@
 
 require_once 'connect.php';
 
+$cat = filter_input(INPUT_GET, 'category');
+$function = filter_input(INPUT_GET, 'function');
+
+echo '<div class="content">';
+echo $function($cat);
+
 //обработка ссылок меню
 function show_vendors($id) {
     global $link;
@@ -16,6 +22,5 @@ function show_vendors($id) {
             echo $rows['name'].'<br>';   
         }
 }
-$cat = filter_input(INPUT_GET, 'category');
-$function = filter_input(INPUT_GET, 'function');
-echo '<div align="center">'.$function($cat).'</div>';
+
+echo '</div>';

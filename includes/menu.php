@@ -6,4 +6,4 @@
  * and open the template in the editor.
  */
 
-echo '<div align="left"><a href="index.php?function=show_vendors&category=1">Мониторы</a></div>';
+echo '<div class="menu"><a href="index.php?function=show_vendors&category=1">Мониторы</a></div>';
